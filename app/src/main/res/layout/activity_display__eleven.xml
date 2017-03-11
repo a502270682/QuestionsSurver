@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="11.What do you think the most attractive options of online games?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="30dp"/>
+
+    <ListView
+    android:id="@+id/lvperson"
+    android:layout_width="fill_parent"
+
+    android:layout_height="382dp"
+        android:layout_weight="0.77"
+        />
+    <Button
+        android:id="@+id/btn_Ele"
+        android:layout_width="fill_parent"
+        android:layout_height="63dp"
+        android:text="NEXT"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="30dp"/>
+</LinearLayout>

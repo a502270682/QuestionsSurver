@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/display_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.questionssurver.Display_One">
+
+
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/btn_one"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="btn_one_onclick"
+        android:textSize="30dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/RdGroup"
+        android:layout_marginTop="63dp"
+        android:layout_below="@+id/textView2"
+        android:weightSum="1"
+        android:layout_above="@+id/btn_one">
+
+        <RadioButton
+            android:layout_width="146dp"
+            android:layout_height="73dp"
+            android:id="@+id/Rd_One_A"
+            android:text="male"
+            android:textSize="30dp"
+            />
+
+        <RadioButton
+            android:layout_width="146dp"
+            android:layout_height="73dp"
+            android:id="@+id/Rb_One_B"
+            android:textSize="30dp"
+            android:text="female"
+            android:layout_weight="0.26" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="1.What's your gender?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView2"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
